@@ -35,7 +35,7 @@ interface todo {
 let val = ref('')
 let todos = ref<todo[]>([])
 // 增
-function addTodo() {
+const addTodo=function() {
   if (val.value) {
     todos.value.push({
       done: false,
